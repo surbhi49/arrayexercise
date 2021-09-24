@@ -189,8 +189,10 @@ console.log(shoppingcart)
 shoppingcart.push('sugar')
 console.log(shoppingcart)
 
-
 console.log(shoppingcart.slice(0,4,0,6,shoppingcart.lenght))
+
+shoppingcart[3]='Green Tea'
+console.log(shoppingcart)
 
 /*In countries array check if 'Ethiopia' exists in the array if it exists print 'ETHIOPIA'. If it does not exist 
 add to the countries list. */
@@ -203,3 +205,36 @@ const countries = [
 console.log(countries.includes())
 console.log(countries.toUpperCase)
 
+let country=['India','Ethiopia','England','Japan']
+
+if(country.includes('Ethiopia')){
+    console.log("ETHIOPIA")
+}
+else{
+    console.log('not exist')
+}
+
+/*In the webTechs array check if Sass exists in the array and if it exists print 'Sass is a CSS preprocess'. If it
+does not exist add Sass to the array and print the array.*/
+let webTechs="Saas"
+
+if(webTechs.includes("Sass")){
+    console.log("Sass is a CSS prepocess")
+}
+else{
+    console.log("does not exist sass")
+}
+//Concatenate the following two variables and store it in a fullStack variable.
+
+const frntEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+
+const bckEnd = ['Node','Express', 'MongoDB']
+
+let fullStack=frntEnd.concat(bckEnd)
+
+console.log(fullStack)
+
+//Sort the array and find the min and max age
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+
+console.log(ages.sort())
